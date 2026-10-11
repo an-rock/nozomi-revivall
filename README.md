@@ -1,11 +1,8 @@
-# Nozomi Revival (static recreation)
+# Nozomi Revival — static preservation
 
-A GitHub Pages-friendly visual recreation based on an archived signup page and the downloaded static assets.
+This version uses the original captured Nozomi homepage markup and its archived CSS, fonts, logo, icons, and JavaScript chunks. It replaces the permanently stuck “Loading home...” placeholder with a simple static landing section because the original page data came from a backend that is no longer available.
 
-## Publish on GitHub Pages
-1. Create a GitHub repository and upload the contents of this folder (not the folder itself).
-2. Open **Settings → Pages**.
-3. Choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
+## GitHub Pages
+Upload the contents of this folder to the repository root and select **Settings → Pages → Deploy from a branch → main → /(root)**.
 
-## Limitations
-This is a static frontend only. The original Nozomi backend, Discord OAuth, account database, login, password reset, and hCaptcha integration are not included. Sign-in controls intentionally do not send or store credentials. The background is recreated with CSS because the captured archive did not contain `UnsecuredContent/ImageFive.webp`.
+This is a visual preservation only. Account login, live game listings, search, and server-powered routes are not functional.
