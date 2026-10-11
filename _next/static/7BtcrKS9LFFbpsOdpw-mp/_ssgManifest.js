@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002FMy\u002FAvatar","\u002Fevents","\u002Fgames","\u002Fhome"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
