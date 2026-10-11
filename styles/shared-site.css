@@ -1,0 +1,73 @@
+/* Shared Nozomi theme: dark by default, with the same navigation and buttons on every page. */
+:root{color-scheme:dark;--nozomi-bg:#15151b;--nozomi-panel:#202027;--nozomi-panel-2:#262630;--nozomi-border:#393943;--nozomi-text:#f2f2f6;--nozomi-muted:#b4b4c0;--nozomi-purple:#7144a8;--nozomi-purple-hover:#8658bf;--nozomi-link:#c8a8ff}
+html,body{background:var(--nozomi-bg)!important;color:var(--nozomi-text)!important}
+body{font-family:Gotham,'Source Sans Pro',Arial,sans-serif;min-height:100vh}
+a{color:var(--nozomi-link)}
+/* Shared header used by all the standalone pages. */
+.site-header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#7042a9 0%,#4e2b79 100%);box-shadow:0 2px 8px #0005;color:#fff}
+.site-header-inner{max-width:1440px;min-height:58px;margin:0 auto;padding:6px 20px;display:flex;align-items:center;gap:18px}
+.site-brand{display:flex;align-items:center;flex:0 0 auto}
+.site-brand img{display:block;width:122px;height:36px;object-fit:contain}
+.site-nav{display:flex;align-items:center;gap:3px;min-width:0;flex:0 1 auto}
+.site-nav a,.site-account a{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;color:#fff;text-decoration:none;font-size:14px;padding:7px 9px;border-radius:4px}
+.site-nav a:hover,.site-nav a.active,.site-account a:hover{background:#ffffff1c;color:#fff}
+.site-search{display:flex;align-items:center;min-width:120px;max-width:280px;flex:1;margin-left:auto;height:32px;border:1px solid #ffffff70;border-radius:3px;background:#fff;color:#222}
+.site-search input{width:100%;min-width:0;height:30px;border:0;outline:0;background:transparent;color:#222;padding:4px 9px;font:14px Arial,sans-serif}
+.site-search button{height:30px;width:34px;border:0;background:transparent;color:#555;font-size:19px;cursor:pointer}
+.site-account{display:flex;align-items:center;gap:4px;flex:0 0 auto}
+.site-account a.signup-link{background:#f3f0f9;color:#38234f;font-weight:700;padding:8px 12px}
+.site-account a.signup-link:hover{background:#fff;color:#38234f}
+.site-menu{display:none;border:1px solid #ffffff50;border-radius:4px;background:#ffffff12;color:#fff;padding:7px 10px;font-size:20px}
+/* Darken legacy homepage panels without changing its layout. */
+.nozomi-home-content{color:var(--nozomi-text)!important;padding-top:32px!important}
+.nozomi-welcome,.nozomi-panel,.content-card,.entry,.empty-state,.empty{background:var(--nozomi-panel)!important;color:var(--nozomi-text)!important;border-color:var(--nozomi-border)!important;box-shadow:0 2px 8px #0002}
+.nozomi-welcome h1,.nozomi-panel h2,.empty-state strong,.section-heading h2{color:var(--nozomi-text)!important}
+.nozomi-welcome p,.nozomi-panel p,.nozomi-note,.section-copy,.lead,.entry-copy p,.result-count,.muted{color:var(--nozomi-muted)!important}
+.nozomi-button,.primary-button,.entry-link,.site-button{display:inline-flex;align-items:center;justify-content:center;background:var(--nozomi-purple)!important;color:#fff!important;border:0;border-radius:3px;padding:9px 14px;text-decoration:none;font-weight:600;cursor:pointer;transition:background .15s ease}
+.nozomi-button:hover,.primary-button:hover,.entry-link:hover,.site-button:hover{background:var(--nozomi-purple-hover)!important;color:#fff!important;text-decoration:none}
+.archive-notice{background:#33264a!important;border-color:#62458a!important;color:#eee!important}
+.archive-notice span{color:#d0c4e2!important}
+.footer-0-2-48,.site-footer,.page>footer{background:#111116!important;color:#9999a8!important;border-color:#33333c!important}
+.site-footer a,.page>footer a,.footer-0-2-48 a{color:#c8a8ff!important}
+/* Archive and information pages */
+.topbar{background:linear-gradient(180deg,#7042a9 0%,#4e2b79 100%)!important;color:#fff!important;box-shadow:0 2px 8px #0005!important}
+.topbar nav a{color:#fff!important}
+.page{max-width:1200px;padding-top:32px}
+.eyebrow{color:#c5a5f4!important}
+.notice{background:#30263e!important;border-color:#59466e!important;color:#ddd3ed!important;border-radius:3px}
+.notice strong,.notice span{color:#ddd3ed!important}
+.entry-icon{background:#3a2a4c!important;color:#d4b9ff!important}
+.entry-link{padding:8px 12px!important}
+.section-heading{border-color:var(--nozomi-border)!important}
+/* Sign up / log in forms share the site panels and button style. */
+.account-page{max-width:1200px;margin:0 auto;padding:44px 22px 56px;min-height:calc(100vh - 130px)}
+.account-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,460px);gap:clamp(28px,6vw,90px);align-items:center;max-width:1000px;margin:0 auto}
+.account-intro h1{font-size:clamp(36px,5vw,58px);line-height:1.08;letter-spacing:-.04em;margin:12px 0;color:#fff}
+.account-intro p{max-width:420px;color:var(--nozomi-muted);line-height:1.75}
+.account-card{background:var(--nozomi-panel);border:1px solid var(--nozomi-border);padding:30px;border-radius:4px;box-shadow:0 8px 30px #0003}
+.account-card h2{font-size:24px;margin:0 0 8px;color:#fff}
+.account-card>p{color:var(--nozomi-muted);font-size:13px;line-height:1.7;margin:0 0 22px}
+.account-form{display:grid;gap:14px}
+.account-form label{display:grid;gap:6px;color:#dedee7;font-size:13px;font-weight:600}
+.account-form input{width:100%;height:43px;padding:10px 12px;background:#15151b;border:1px solid #444450;border-radius:3px;color:#fff;font:14px Gotham,Arial,sans-serif}
+.account-form input:focus{outline:2px solid #a982df;outline-offset:1px;border-color:#a982df}
+.account-form .site-button{width:100%;min-height:43px;margin-top:3px;font:600 14px Gotham,Arial,sans-serif}
+.account-switch{margin-top:18px!important;margin-bottom:0!important;font-size:13px!important}
+.account-switch a{color:#d0b3ff;font-weight:600}
+.account-status{margin-top:16px;padding:12px 13px;border:1px solid #5b4b6e;background:#30263e;color:#e0d5ef;border-radius:3px;font-size:12px;line-height:1.65}
+.site-footer{padding:20px max(20px,calc((100% - 1160px)/2));font-size:12px;line-height:1.7;border-top:1px solid #33333c}
+.site-footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.site-footer nav{display:flex;gap:14px;flex-wrap:wrap}
+.site-footer nav a{color:#c8a8ff;text-decoration:none}
+@media(max-width:1100px){.site-header-inner{gap:10px;padding:6px 12px}.site-nav a{font-size:13px;padding:7px 6px}.site-search{max-width:190px}}
+@media(max-width:850px){.site-header-inner{flex-wrap:wrap;gap:8px}.site-menu{display:block}.site-nav{display:none;order:5;width:100%;flex:1 0 100%;overflow-x:auto;padding:2px 0 5px}.site-nav.open{display:flex}.site-search{margin-left:auto;max-width:220px}.site-account{margin-left:auto}.account-layout{grid-template-columns:1fr;gap:25px}.account-intro{text-align:center}.account-intro p{margin-left:auto;margin-right:auto}.account-page{padding-top:30px}}
+@media(max-width:520px){.site-header-inner{padding:7px 10px}.site-brand img{width:105px}.site-search{order:4;flex:1 1 100%;max-width:none}.site-account a{font-size:12px;padding:7px 8px}.account-card{padding:23px 20px}.account-intro h1{font-size:39px}.page{padding:26px 14px 22px}.site-footer-inner{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+/* Small account actions on the preserved homepage header. */
+.home-account-links{gap:5px!important;margin-left:4px}
+.home-account-links a{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border-radius:3px;color:#fff;text-decoration:none;font-size:13px;white-space:nowrap}
+.home-account-links a:hover{background:#ffffff1c;color:#fff}
+.home-account-links a:last-child{background:#f3f0f9;color:#38234f;font-weight:700}
+.home-account-links a:last-child:hover{background:#fff;color:#38234f}
+.main-0-2-26{background:var(--nozomi-bg)!important}
+@media(max-width:767px){.home-account-links{margin-left:auto}.home-account-links a{padding:6px 8px;font-size:12px}}

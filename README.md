@@ -26,3 +26,8 @@ Account login, live game listings, purchases, search services, and server-powere
 The separate [NozomiShutdownLeaks repository](https://github.com/adamh83717-cpu/NozomiShutdownLeaks) is linked as historical reference. This project does not bundle its captured HTML pages as executable site source.
 
 Nozomi is an independent game-preservation community. It is not affiliated with or endorsed by the original platform.
+
+
+## Shared styling and account page recreations
+
+All site pages use the same purple navigation bar, navigation links, search control, and button style. The site now defaults to a dark theme regardless of the visitor's system theme. The local `/signup/` and `/login/` pages are visual recreations only: they do not create accounts, authenticate users, or transmit/store form values. Search also displays a notice because the original backend is not included.

@@ -7,19 +7,15 @@
   <title>Preservation Archive - Nozomi</title>
   <link rel="icon" type="image/png" href="./nozomi-icon.png">
   <link rel="stylesheet" href="./styles/archive.css">
-</head>
+<link rel="stylesheet" href="./styles/shared-site.css"></head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="./index.html" aria-label="Nozomi home">
-      <img src="./img/nozomi-wordmark.png" alt="Nozomi">
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="./index.html">Home</a>
-      <a class="active" href="./archive.html">Archive</a>
-      <a href="./auth/privacy/index.html">Privacy</a>
-      <a href="./auth/tos/index.html">Terms</a>
-    </nav>
-  </header>
+  <header class="site-header"><div class="site-header-inner">
+<a class="site-brand" href="./index.html" aria-label="Nozomi home"><img src="./img/nozomi-wordmark_v=20260913.png" alt="Nozomi"></a>
+<button class="site-menu" type="button" id="site-menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="./games/">Games</a><a href="./catalog/">Catalog</a><a href="./events/">Events</a><a href="./develop/">Develop</a><a href="./download/">Download</a><a href="./archive.html" class="active">Archive</a><a href="./donate/">Donate</a></nav>
+<form class="site-search" id="site-search-form" role="search"><input type="search" aria-label="Search" placeholder="Search" autocomplete="off"><button type="submit" aria-label="Search">⌕</button></form>
+<div class="site-account"><a href="./login/">Log in</a><a class="signup-link" href="./signup/">Sign up</a></div>
+</div></header>
 
   <main class="page">
     <section class="intro">
@@ -37,7 +33,10 @@
         <div class="entry-icon">⌂</div><div class="entry-copy"><h2>Home</h2><p>The reconstructed landing page and navigation for this static revival.</p></div><a class="entry-link" href="./index.html">Open page <span aria-hidden="true">→</span></a>
       </article>
       <article class="entry" data-search="account signup login registration">
-        <div class="entry-icon">◎</div><div class="entry-copy"><h2>Account pages</h2><p>Local sign-up and authentication page recreations. No credentials are collected or transmitted.</p></div><a class="entry-link" href="./signup/index.html">Open page <span aria-hidden="true">→</span></a>
+        <div class="entry-icon">◎</div><div class="entry-copy"><h2>Account pages</h2><p>Local sign-up and login page recreations with matching dark styling. Forms do not send or save credentials.</p></div><a class="entry-link" href="./signup/index.html">Open page <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="login sign in authentication account">
+        <div class="entry-icon">↪</div><div class="entry-copy"><h2>Log in</h2><p>A matching local login page. Authentication is not connected to a backend.</p></div><a class="entry-link" href="./login/">Open page <span aria-hidden="true">→</span></a>
       </article>
       <article class="entry" data-search="privacy policy data">
         <div class="entry-icon">◇</div><div class="entry-copy"><h2>Privacy</h2><p>Read the privacy information included with this repository.</p></div><a class="entry-link" href="./auth/privacy/index.html">Open page <span aria-hidden="true">→</span></a>
