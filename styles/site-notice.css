@@ -1,0 +1,4 @@
+.archive-notice{position:relative;z-index:20;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:10px 18px;background:#f2b600;border-bottom:1px solid #d59f00;color:#fff;text-align:center;text-decoration:none;font-family:Gotham,Arial,sans-serif;font-size:13px;line-height:1.4}
+.archive-notice strong{font-weight:700}.archive-notice span{opacity:.96}.archive-notice .notice-arrow{font-size:18px;transition:transform .15s}.archive-notice:hover .notice-arrow{transform:translateX(3px)}.archive-notice:hover{text-decoration:none;background:#e9ad00}
+@media(max-width:575px){.archive-notice{gap:5px 9px;font-size:12px}.archive-notice span:nth-child(2){flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.archive-notice .notice-arrow{transition:none}}

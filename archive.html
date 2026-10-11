@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A local preservation index for the Nozomi Revival static archive.">
+  <title>Preservation Archive - Nozomi</title>
+  <link rel="icon" type="image/png" href="./nozomi-icon.png">
+  <link rel="stylesheet" href="./styles/archive.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="Nozomi home">
+      <img src="./img/nozomi-wordmark.png" alt="Nozomi">
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a class="active" href="./archive.html">Archive</a>
+      <a href="./auth/privacy/index.html">Privacy</a>
+      <a href="./auth/tos/index.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">STATIC PRESERVATION PROJECT</p>
+      <h1>Nozomi Archive</h1>
+      <p class="lead">A small, local index for the pages and visual resources preserved in this revival. It is designed to work on GitHub Pages without the original Nozomi backend.</p>
+      <div class="notice"><strong>Archive status</strong><span>Read-only recreation. Accounts, live listings, purchases, search services, and server actions are not available.</span></div>
+      <label class="search-label" for="archive-search">Filter archive entries</label>
+      <input id="archive-search" type="search" placeholder="Try “catalog”, “account”, or “visual assets”" autocomplete="off">
+      <p id="result-count" class="result-count" aria-live="polite">Showing all entries</p>
+    </section>
+
+    <section class="entries" aria-label="Archive entries">
+      <article class="entry" data-search="home landing homepage navigation">
+        <div class="entry-icon">⌂</div><div class="entry-copy"><h2>Home</h2><p>The reconstructed landing page and navigation for this static revival.</p></div><a class="entry-link" href="./index.html">Open page <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="account signup login registration">
+        <div class="entry-icon">◎</div><div class="entry-copy"><h2>Account pages</h2><p>Local sign-up and authentication page recreations. No credentials are collected or transmitted.</p></div><a class="entry-link" href="./signup/index.html">Open page <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="privacy policy data">
+        <div class="entry-icon">◇</div><div class="entry-copy"><h2>Privacy</h2><p>Read the privacy information included with this repository.</p></div><a class="entry-link" href="./auth/privacy/index.html">Open page <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="terms conditions tos">
+        <div class="entry-icon">≡</div><div class="entry-copy"><h2>Terms</h2><p>Read the terms page preserved in this project.</p></div><a class="entry-link" href="./auth/tos/index.html">Open page <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="visual assets logo fonts icons graphics">
+        <div class="entry-icon">▧</div><div class="entry-copy"><h2>Visual assets</h2><p>Local logo, icon, SVG artwork, fonts, and other visual resources used by the recreation.</p></div><a class="entry-link" href="./img/nozomi-wordmark.png">View wordmark <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="entry" data-search="reference shutdown captured source history">
+        <div class="entry-icon">↗</div><div class="entry-copy"><h2>Shutdown reference</h2><p>The original community’s separate shutdown-leaks repository is linked as historical reference, not embedded as running source code here.</p></div><a class="entry-link" href="https://github.com/adamh83717-cpu/NozomiShutdownLeaks" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+      </article>
+    </section>
+    <p id="empty-state" class="empty" hidden>No entries match that search. Try a different word.</p>
+    <footer><p>Nozomi is an independent game-preservation community and is not affiliated with or endorsed by the original platform.</p><a href="./index.html">Back to home</a></footer>
+  </main>
+  <script src="./js/archive.js" defer></script>
+</body>
+</html>
